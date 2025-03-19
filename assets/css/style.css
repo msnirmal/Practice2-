@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Vollkorn&display=swap');
+
+body{ 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #fcde67;
+   
+}
+.quiz-area {
+    border: 2px solid;
+    border-radius: 10px;
+    width: 480px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    box-shadow: 7px 7px 8px 8px gray;
+    background-color: whitesmoke;
+    
+}
+ 
+.header{
+    margin-top: 0;
+    font-family: vollkorn;
+      
+  }
+
+  #question {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  .result {
+    padding-top: 5px;
+    font-family: Poppins;
+    font-size: small;
+     
+  }
+  
+  #guess{
+    width: 250px;
+    height: 20px;
+    font-size: small;
+    font-family: Poppins;
+     
+     
+  }
+  
+  #submit{
+    width: 100px;
+    height: 27px;
+    background-color: #5bccf6;
+    border-radius: 5px;
+        
+  }
+     
+  #next{
+    width: 120px;
+    height: 30px;
+    background-color: #5bccf6;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-right: 10px;
+     
+}
+
+  #reload{
+    width: 120px;
+    height: 30px;
+    background-color: #5bccf6;
+    border-radius: 5px;
+    margin-right: 50px;
+    margin-left: 10px; 
+       
+    
+  }
+
+  /* For medium screens size from 580px wide and down */ 
+
+  @media screen and (max-width: 580px) {
+    .quiz-area{
+    width: 350px;
+    height: 470px;
+    }
+
+    #next {
+      margin-right: 20px;
+      width: 100px;
+    }
+    #reload {
+      margin-right: 20px;
+      margin-bottom: 5px;
+      width: 100px;
+    }
+
+    #submit {
+      margin-top: 5px;
+    }
+  }
+
+  /* For medium screens size from 580px wide and down */
+
+  @media screen and (max-width: 400px) {
+
+   .quiz-area {
+      width: 300px;
+      height: 500px;
+      margin-left: 100px;
+   }
+
+   #next {
+      width: 80px;
+   }
+   
+   #reload {
+    width: 80px;    
+  }
+}
